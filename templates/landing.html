@@ -5,21 +5,21 @@
     Home
 {% endblock %}
 {% block body%}
-    <section id="home" class="flex s-around sw-80 m-auto">
-        <div class="home-left flex items-center">
+    <section class="flex s-around m-8">
+        <div class="m-20 home-left flex items-center">
             <div class="home-content">
-                <h6 class="p-10 text-red-500 hover:textwhite hover:bg-black"> Hi, I'm </h6>
-                <h1 class="t-white"> Brandon </h1>
-                <h4 class="popinss"> software Developer </h4>
-                <a href="{% static 'src/pdf/Resume_2025.pdf' %}" target="_blank">
-                    <button class="btn popinss"> Resume </button>
+                <h6 class="pl-5 text-6xl text-slate-100"> Hi, I'm </h6>
+                <h1 class="px-10 pt-8 mx-20 text-8xl text-slate-100"> BK </h1>
+                <h4 class="text-6xl m-4 mb-6 mx-20 text-slate-100 popinss"> software Developer </h4>
+                <a class="m-8" href="{% static 'src/pdf/Resume_2025.pdf' %}" target="_blank">
+                    <button class="inline-block text-4xl rounded-lg px-4 py-2 bg-lime-500 text-white"> Resume </button>
                 </a>
-                <a class="btn live popinss" id ="hireme" href="" target="_blank"> Lets Talk </a>
+                <a class="inline-block text-4xl rounded-lg px-4 py-2 bg-fuchsia-500 text-white" href="" target="_blank"> Lets Talk </a>
             </div>
         </div>
-        <div class="home-right flex s-center items-center">
+        <div class="m-20 home-right flex s-center items-center">
             <div class="circle flex s-center items-center" id="mainimage">
-                <img src="{% static 'src/images/mandb.jpeg' %}" alt="picture">
+                <img class="h-64 m-8 rounded-lg shadow-xl" src="{% static 'src/images/mandb.jpeg' %}" alt="picture">
             </div>
         </div>
     </section>
@@ -30,7 +30,7 @@
 <h1 class="t-center my-2 t-white f-2"> About <menu></menu></h1>
 <div class="about-container flex s-round">
 <div class="about-left flex s-center items-center">
-    <img src="{% static 'src/images/rozwell.jpeg' %}" alt="image of dog">
+    <img class="h-64 m-8 rounded-lg shadow-xl" src="{% static 'src/images/rozwell.jpeg' %}" alt="image of dog">
 </div>
 </div> 
 
