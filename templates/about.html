@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- About section -->
+    <section class="text-center">
+        <h1 class="text-center pl-5 text-6xl text-slate-100"> About me<menu></menu></h1>
+        <div class="flex s-round">
+            <div class="items-center">
+                <img class="h-64 m-8 rounded-lg shadow-xl" src="{% static 'src/images/rozwell.jpeg' %}" alt="image of dog">
+            </div>
+        </div> 
+        
+        <div class="flex">
+            <div>
+                <h1 class="text-slate-100"> Brandon Distler </h1>
+                <p class="text-slate-100">I am I software developer excited to help make your software come to life.</p>
+                <a href="btn" id="hireme" href=""> Hire me!</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

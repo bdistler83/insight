@@ -7,6 +7,12 @@ from portfolio.models import Contact
 def landing_page(request):
     return render(request, 'landing.html')
 
+def about_page(request):
+    return render(request, 'about.html')
+
+def portfolio_page(request):
+    return render(request, 'portfolio.html')
+
 def contact(request):
     if request.method== "POST":
         print('post')

@@ -1,0 +1,34 @@
+{% extend 'base.html'%}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+<!-- Contact section -->
+<section id="contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="contact-container flex s-round items-center">
+    <div class="form" id="contactform">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="name form-div">
+                <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="email form-div">
+                <input type="text" name="email" id="email" class="popinss" placeholder="Enter your email" required>
+            </div>
+    
+            <div class="phone form-div">
+                <input type="phone" name="number" id="number" class="popinss" placeholder="Enter phone number" required>
+            </div>
+    
+            <div class="textarea form-div">
+                <textarea name="message" id="textarea" cols="30" rows="10" class="popinss" placeholder="Enter a message"></textarea>
+            </div>
+            <button type="submit" class="btn popinss" id="submit">send</button>    
+        </form>
+    </div>
+    </div>
+    </section>

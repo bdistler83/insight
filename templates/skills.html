@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+    Skills
+{% endblock %}
+
+<!-- Skills section -->
+<section>
+    <h1 class="text-slate-100"> Skills </h1>
+    <div class="services-container flex s-round h-50">
+    <div class="skills-left flex s-center items-center">
+        <img src="{% static 'images/skills.png' %}" alt="skills">
+    </div>
+    <div class="skills-right flex items-center">
+        <div class="skills-container">
+            <div><span class="text-slate-white">Core Python</span>
+            <span class="bar-content right-skills t-white">90%</span></div>
+    
+            <div><span class="text-slate-white">Html</span>
+            <span class="bar-content right-skills t-white">90%</span></div>
+    
+            <div><span class="text-slate-white">CSS</span>
+            <span class="bar-content right-skills t-white">90%</span></div>
+                
+            <div><span class="text-slate-white">JavaScript</span>
+            <span class="bar-content right-skills t-white">90%</span></div>
+        </div>
+    </div>
+    </div>
+    </section> 
