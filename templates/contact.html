@@ -5,9 +5,11 @@
     Home
 {% endblock %}
 
+{% block body %}
+{% block content %}
 <!-- Contact section -->
 <section id="contact" class="m-b-1">
-    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <h1 class="text-center text-lime-500"> Contact Me</h1>
     <div class="contact-container flex s-round items-center">
     <div class="form" id="contactform">
         <form method="POST">
@@ -32,3 +34,5 @@
     </div>
     </div>
     </section>
+    {% endblock %}
+    {% endblock %}

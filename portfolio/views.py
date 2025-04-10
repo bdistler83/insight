@@ -10,8 +10,11 @@ def landing_page(request):
 def about_page(request):
     return render(request, 'about.html')
 
-def portfolio_page(request):
-    return render(request, 'portfolio.html')
+def skills_page(request):
+    return render(request, 'skills.html')
+
+def projects_page(request):
+    return render(request, 'projects.html')
 
 def contact(request):
     if request.method== "POST":

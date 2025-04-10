@@ -1726,6 +1726,9 @@
   .text-gray-700 {
     color: var(--color-gray-700);
   }
+  .text-lime-500 {
+    color: var(--color-lime-500);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
